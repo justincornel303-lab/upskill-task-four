@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: palegoldenrod;
+    font-family: 'Times New Roman', serif;
+    font-size: 23px;
+}
+
+h2 {
+    font-weight: 700;
+    color: peru;
+    text-align: auto;
+}
+
+h3{
+    font-weight: 600;
+    color: peru;
+}
+
+.header{
+    background-color: lawngreen;
+    color: black;
+    font-size: 1.8rem;
+    font-family: serif;
+    text-align: center;
+    justify-content: bottom;
+    padding: 5px 10px;
+    position: sticky;
+    align-items:center;
+    z-index: 999;
+    border-bottom: 1px solid peru;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    font-size: 25px;
+    cursor:grab;
+    user-select: none;
+    color: peru;
+    padding: 5px;
+
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+    padding: 50px;
+    gap: 40px;
+    background-color: black; 
+}
+
+.portfolio-text{
+    flex: 1 1 55%;
+    text-align: center;
+}
+
+.portfolio-text h2{
+    margin-bottom: 1rem;
+}
+
+.portfolio-text p{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-image{
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.portfolio-image img{
+    width: 290px;
+    height: 290px;
+    object-fit: contain;
+    border-radius: 30%;
+    border: 3.5px solid lawngreen;
+    transition: all 1s ease-in-out;
+}
+
+.portfolio-image img:hover {
+    border-radius: 40%;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(200, 250, 20, 30);
+}
+
+.projects {
+    padding: 3rem 2rem;
+    background: fixed;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border: 1px solid lawngreen;
+    border-radius: 15px;
+    padding: 1rem;
+    max-width: 300px;
+    transform:transform 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.project-card img {
+    border-radius: 15px;
+    border: 3.5px solid lawngreen;
+    height: 200px;
+    width: 250px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(200, 250, 20, 30);
+}
+
+.project-card h3 {
+    margin: 0.8rem 0;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact h2 {
+    margin-bottom: 0.3rem;
+}
+
+.email-btn {
+    display:inline-block;
+    padding: 0.3rem 1.5rem;
+    background: black;
+    border: 1.5px solid lime;
+    border-radius: 5%;
+    color: peru;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.email-btn:hover {
+    background: lime;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+    background: black;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 10px;
+    line-height: 0.5;
+     border: 2px solid lawngreen;  
+}
+
+.social-links {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-text,
+    .portfolio-image{
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+
+.navbar ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(200, 250, 20, 30);
+}
+
+ #menu-toggle:checked ~ .navbar ul {
+    display: flex;
+ }
+
+ .navbar ul li a {
+    color: limegreen;
+ }
+
+ .project-container{
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .portfolio {
+    padding: 2rem 1rem;
+ }
+
+ .logo{
+    gap: 10px;
+ }
+ }
+
+ .html{
+    scroll-behavior: smooth;
+ }
+
+
