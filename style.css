@@ -277,9 +277,9 @@ h3{
  }
 
  .header{
-    font-size: 1.4rem;
+    font-size: 1.18rem;
     line-height: 1;
-    padding: 1px 5px;
+    padding: 0.5px 2px;
  }
 
  .logo{
@@ -289,20 +289,20 @@ h3{
  }
 
 .logo img {
-    width: 50px;
+    width: 65px;
     height: auto;
     align-items: center;
  }
 
  h2 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     text-align: auto;
 }
 
 h3{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 p{
@@ -312,7 +312,7 @@ p{
 
 .footer {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 1rem;
     margin: 10px;
     line-height: 0.3;
